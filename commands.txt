@@ -1,0 +1,23 @@
+Workingdirectory = Onde estou fazendo mudanças no arquivo, meu PC por exemplo.
+---
+Staged = onde o arquivo fica após o add para ser commited depois
+---
+Repertory = Onde o arquivo ficará após o commited com atualizações e pontos históricos
+
+----------------------------------COMANDOS---------------------------------------
+git init
+.
+git add nomeDoArquivo ~~> (manda para o Staged para ser commited depois, caso digite apenas um ponto "." após o add ele irá adicionar todos os arquivos)
+.
+git commit -m "Digitar aqui uma mensagem que indique oq ocorreu nessa modificação"
+.
+git status ~~> (mostra status das modificações a SEREM FEITAS, commitadas ou add)
+           ~~> (também mostra alguns comandos que úteis)
+.
+git diff ~~> (mostra todas as modificações feitas ques estão no WORKING directory com detalhamentos)
+.
+git diff --staged ~~> (mostra todas as modificações feitas ques estão no STAGED com detalhamentos)
+.
+git restore --staged nomeDoArquivo ~~> (retira do STAGED as coisas que foram "git add")
+.
+git rm nomeDoArquivo ~~> (deleta o arquivo permanentemente do Sistema)
