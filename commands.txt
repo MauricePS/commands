@@ -20,4 +20,5 @@ git diff --staged ~~> (mostra todas as modificações feitas ques estão no STAG
 .
 git restore --staged nomeDoArquivo ~~> (retira do STAGED as coisas que foram "git add")
 .
-git rm nomeDoArquivo ~~> (deleta o arquivo permanentemente do Sistema)
+git rm nomeDoArquivo ~~> (deleta o arquivo permanentemente do Sistema, a não ser que tenha sido commited no repository)
+.
