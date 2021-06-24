@@ -22,3 +22,8 @@ git restore --staged nomeDoArquivo ~~> (retira do STAGED as coisas que foram "gi
 .
 git rm nomeDoArquivo ~~> (deleta o arquivo permanentemente do Sistema, a não ser que tenha sido commited no repository)
 .
+git commit amend ~~> (corrigindo e realizando alterações no último commit)
+.
+git clean -n / e/ git clean -f ~~> (remove arquivos não rastreados da pasta *MUITO CUIDADO pois não existe commit deste arquivo*)
+.
+git revert HEAD-# ~~> ( #=numero do log do commit contando do ultimo até o que vc quer reverter)
