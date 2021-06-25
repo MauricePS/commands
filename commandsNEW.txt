@@ -12,7 +12,7 @@ git add nomeDoArquivo ~~> (manda para o Staged para ser commited depois, caso di
 git commit -m "Digitar aqui uma mensagem que indique oq ocorreu nessa modificação"
 .
 git status ~~> (mostra status das modificações a SEREM FEITAS, commitadas ou add)
-           ~~> (também mostra alguns comandos que úteis)
+           ~~> (também mostra alguns comandos úteis)
 .
 git diff ~~> (mostra todas as modificações feitas ques estão no WORKING directory com detalhamentos)
 .
@@ -20,10 +20,17 @@ git diff --staged ~~> (mostra todas as modificações feitas ques estão no STAG
 .
 git restore --staged nomeDoArquivo ~~> (retira do STAGED as coisas que foram "git add")
 .
-git rm nomeDoArquivo ~~> (deleta o arquivo permanentemente do Sistema, a não ser que tenha sido commited no repository)
+git rm nomeDoArquivo ~~> (deleta o arquivo permanentemente do Sistema, a não ser que tenha sido committed no repository)
 .
 git commit amend ~~> (corrigindo e realizando alterações no último commit)
 .
 git clean -n / e/ git clean -f ~~> (remove arquivos não rastreados da pasta *MUITO CUIDADO pois não existe commit deste arquivo*)
 .
 git revert HEAD-# ~~> ( #=numero do log do commit contando do ultimo até o que vc quer reverter)
+.
+git remote add origin "link" ~~> (fazer o link do seu repository no Git com o criado no Github *optar pelo link da SSHkey* o restante dos comandos o próprio GitHub fornece ao criar um reposítório no site)
+.
+git push ~~> (mandar commmits realizados para o Github, caso tenha criado outra branch necessita realizar o "-u" novamente)
+.
+git pull ~~> (traz alterações realizadas no próprio Github que não esteja na sua máquina)
+.
